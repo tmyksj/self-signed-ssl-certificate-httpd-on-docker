@@ -1,0 +1,9 @@
+version: "3"
+services:
+  httpd:
+    build: "./"
+    volumes:
+      - "./:/usr/local/apache2/htdocs:ro"
+    ports:
+      - "8080:80"
+      - "8443:443"
